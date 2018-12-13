@@ -1,6 +1,6 @@
 <?php
 
-//Fonction de démarrage d'une session anonyme 
+//Fonction de démarrage d'une session anonyme
 function initializeAnonymousSession($answers) {
   session_start();
   $_SESSION["user"] = "anonymous";

@@ -15,14 +15,40 @@
 function getRoutes() {
   return [
     "" => [
-      "exemple",
-      "welcome"
-    ],
-    "login" => [
       "admin",
-      "loginUser"
+      "login"
+    ],
+    "ListVolunteers" => [
+      "admin",
+      "ListVolunteers"
+    ],
+    "addVolunteer" => [
+      "admin",
+      "addVolunteer",
+      // ["message"=>["string"]]
+    ],
+    "deleteVolunteer" => [
+      "admin",
+      "delete",
+      ["id"=>["integer"]]
+    ],
+    "updateVolunteer" => [
+      "admin",
+      "update",
+      ["id"=>["integer"]]
+    ],
+    "sortVolunteer" => [
+      "admin",
+      "sortVolunteer",
     ]
+    // ["id"=>["integer"]]
+
+    // "login" => [
+    //   "admin",
+    //   "loginUser"
+    // ]
   ];
+
 }
 
  ?>
