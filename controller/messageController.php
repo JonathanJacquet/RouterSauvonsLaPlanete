@@ -14,7 +14,7 @@ function deleteMessage() {
 }
 
 function writeMessage() {
-  require "view/messageView.php";
+  require "view/addMessageView.php";
 }
 
  ?>
