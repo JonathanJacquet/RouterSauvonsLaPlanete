@@ -4,7 +4,7 @@
 <form action="" method="post">
     <div class="form-group">
     <label for="Name">Name</label>
-    <input type="text" class="form-control" id="Name" name="Name" aria-describedby="emailHelp" placeholder="Entrez votre pseudo ..">
+    <input type="text" class="form-control" id="Name" name="Name" placeholder="Entrez votre pseudo ..">
     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <div class="form-group">

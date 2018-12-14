@@ -6,7 +6,7 @@ function ListVolunteers() {
   require "view/volunteersView.php";
 }
 
-function login() {
+function loginVolunteer() {
 
 //On vérifie si le formulaire a été rempli
 if(!empty($_POST)) {
@@ -17,18 +17,13 @@ foreach ($_POST as $key => $value) {
 }
 //On récupère les utilisateurs stockés
 foreach ($volunteers as $key =>$volunteer) {
-  if($volunteer["Name"] === $_POST["Name"] && $_POST["Password"] === $volunteer["Password"]) {
+  if($volunteer["Name"] === $_POST["Name"] && $volunteer["Password"] === $_POST["Password"]) {
 //On démarre une session pour y stocker les informations de l'utilisateur
     initializeUserSession($volunteer);
-  if (isLogged()) {
-    redirectTo("ListVolunteers");
-  }
-//Si le formulaire n'est pas rempli on renvoie l'utilisateur sur la page de connexion avec un message d'erreur
-  else {
-    redirecTo("login");
-        }
+      redirectTo("ListVolunteers");
       }
     }
+
   }
 
 require "view/loginView.php";
@@ -45,8 +40,6 @@ if (!empty($_POST)) {
 }
   addVolunteers($_POST);
     redirectTo("ListVolunteers");
-
-    redirecTo("ListVolunteers");
   }
   require "view/addView.php";
 
@@ -62,7 +55,7 @@ function delete() {
     header("Location: ListVolunteers");
     exit;
 
-    // require "view/volunteersView.php";
+    require "view/volunteersView.php";
 }
 
 
@@ -89,6 +82,14 @@ function sortVolunteer() {
 
   require "view/volunteersView.php";
 }
+
+function logoutVolunteer()  {
+  logout();
+  redirectTo("");
+}
+
+
+
 
 // require "view/volunteersView.php";
  ?>

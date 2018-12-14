@@ -1,9 +1,12 @@
 <?php
   include "template/header.php";
+  include "template/nav.php";
   include "view/form/sortForm.php";
-
+session_start();
 
  ?>
+
+ <!-- <a href="logout" class="btn btn-danger text-light mt-5">Se déconnecter</a> -->
 
  <h2>Liste des volontaires</h2>
 

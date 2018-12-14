@@ -3,13 +3,13 @@
 //Fonction de démarrage d'une session anonyme
 function initializeAnonymousSession($answers) {
   session_start();
-  $_SESSION["user"] = "anonymous";
+  $_SESSION["volunteer"] = "anonymous";
 }
 
 //Fonction de démarrage standard d'une session utilisateur
 function initializeUserSession($user) {
   session_start();
-  $_SESSION["user"] = $user;
+  $_SESSION["volunteer"] = $user;
 }
 
 //Fonction de déconnexion

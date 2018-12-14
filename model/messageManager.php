@@ -2,7 +2,7 @@
 
 function getMessages($userId) {
   $db = getDataBase();
-  $query = $db->prepare("SELECT m.*, u.pseudo FROM message AS m INNER JOIN users AS u ON m.sender = u.id WHERE getter = ?");
+  $query = $db->prepare("SELECT m.*, v.Name FROM Messages AS m INNER JOIN Volunteers AS v ON m.sender = v.ID_Volunteer WHERE Getter = ?");
   $query->execute([$userId]);
   $result = $query->fetchall(PDO::FETCH_ASSOC);
   $query->closeCursor();
@@ -11,12 +11,12 @@ function getMessages($userId) {
 
 function addMessage($message, $sender) {
   $db = getDataBase();
-  $query = $db->prepare("INSERT INTO message(content, date, sender, getter, object) VALUES (:content, NOW(), :sender, :getter, :object)");
+  $query = $db->prepare("INSERT INTO Messages (Sender, Getter, Object, Content, Date) VALUES (Sender = :Sender, Getter = :Getter, Object = :Object, Content = :Content, Date = :Date)");
   $result = $query->execute([
-    "content" => $message["content"],
-    "sender" => $sender,
-    "getter" => $message["pseudo"],
-    "object" => $message["object"]
+    "Sender" => $sender,
+    "Getter" => $message["Name"],
+    "Object" => $message["Object"],
+    "Content" => $message["Content"]
   ]);
   $query->closeCursor();
   return $result;

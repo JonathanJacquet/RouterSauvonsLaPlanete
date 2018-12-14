@@ -16,7 +16,7 @@ function getRoutes() {
   return [
     "" => [
       "admin",
-      "login"
+      "loginVolunteer"
     ],
     "ListVolunteers" => [
       "admin",
@@ -40,6 +40,22 @@ function getRoutes() {
     "sortVolunteer" => [
       "admin",
       "sortVolunteer",
+    ],
+    "logout" => [
+      "admin",
+      "logoutVolunteer",
+    ],
+    // "deleteMessage" => [
+    //   "admin"
+    //   "deleteMessage",
+    // ],
+    "ListMessage" =>[
+      "message",
+      "ListMessage",
+    ],
+    "writeMessage" =>[
+      "message",
+      "writeMessage"
     ]
     // ["id"=>["integer"]]
 
