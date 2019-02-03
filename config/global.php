@@ -3,7 +3,7 @@
 function getGlobalConfig() {
   return $config = [
     "protocol" => "",
-    "host" => "localhost/Lab/microFramework/",
+    "host" => "localhost/Lab/RouteurSavePlanet/",
     "status" => ["anonymous", "user", "admin"],
     "defaultRoute" => ""
   ];
