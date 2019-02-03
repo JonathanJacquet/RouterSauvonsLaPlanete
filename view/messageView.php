@@ -29,7 +29,7 @@ $user = $_SESSION["volunteer"]["ID_Volunteer"];
     <td><?php echo $value["Content"]; ?></td>
     <td><?php echo $value["Date"]; ?></td>
     <td>
-      <a href="deleteMessage?id=<?php echo $value["id"]?>" class="btn btn-danger">Supprimer</a>
+      <a href="deleteMessage?id=<?php echo $value["ID_Message"]?>" class="btn btn-danger">Supprimer</a>
     </td>
   </tr>
 <?php

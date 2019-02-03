@@ -118,6 +118,31 @@ function getSortedVolunteer($form) {
 }
 
 
+
+function getVolunteerByPseudo($pseudo) {
+  $db = getDataBase();
+  $sql = "SELECT * FROM Volunteers WHERE Name = ?";
+
+  $query=$db->prepare($sql);
+  $query->execute([$pseudo]);
+
+  $result = $query->fetchAll(PDO::FETCH_ASSOC);
+  $query->closeCursor();
+  return $result;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 // //  function sort volunteers by city
 // function getSortedVolunteerByCity($form, $db) {
 //   $sql = "SELECT * FROM Volunteers WHERE City = ?";

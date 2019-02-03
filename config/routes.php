@@ -45,10 +45,10 @@ function getRoutes() {
       "admin",
       "logoutVolunteer",
     ],
-    // "deleteMessage" => [
-    //   "admin"
-    //   "deleteMessage",
-    // ],
+    "deleteMessage" => [
+      "admin",
+      "deleteMessage",
+    ],
     "ListMessage" =>[
       "message",
       "ListMessage",

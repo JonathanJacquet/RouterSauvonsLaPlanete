@@ -9,17 +9,19 @@ function getMessages($userId) {
   return $result;
 }
 
-function addMessage($message, $sender) {
+function addMessage($message, $ID_Sender, $ID_Getter) {
   $db = getDataBase();
-  $query = $db->prepare("INSERT INTO Messages (Sender, Getter, Object, Content, Date) VALUES (Sender = :Sender, Getter = :Getter, Object = :Object, Content = :Content, Date = :Date)");
+  $query = $db->prepare("INSERT INTO Messages (Sender, Getter, Object, Content) VALUES (Sender = :Sender, Getter = :Getter, Object = :Object, Content = :Content)");
   $result = $query->execute([
-    "Sender" => $sender,
-    "Getter" => $message["Name"],
-    "Object" => $message["Object"],
-    "Content" => $message["Content"]
+    "Sender" => $ID_Sender,
+    "Getter" => $ID_Getter,
+    "Object" => $message["object"],
+    "Content" => $message["content"]
   ]);
   $query->closeCursor();
   return $result;
 }
+
+// function deleteMessage
 
  ?>
