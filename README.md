@@ -14,9 +14,10 @@ Il fallait également, mettre en place un système de gestion des utilisateurs p
 
 
 
-## Languages utilisés
+## Langages & technologies utilisés
+![PHP7](https://img.shields.io/badge/-PHP7-green.svg)
+![SQL](https://img.shields.io/badge/-SQL-yellow.svg)
 ![HTML5](https://img.shields.io/badge/-HTML5-orange.svg)
 ![CSS3](https://img.shields.io/badge/-CSS3-blue.svg)
 ![FLEXBOX](https://img.shields.io/badge/-FLEXBOX-lightblue.svg)
 ![BOOTSTRAP](https://img.shields.io/badge/-BOOTSTRAP-PURPLE.svg)
-![PHP7](https://img.shields.io/badge/-PHP7-green.svg)
