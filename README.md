@@ -1,5 +1,10 @@
-# Micro framework php en procédural et MVC
+# SAUVONS LA PLANETE
 
-Ce projet est un micro framework développé dans le cadre de mon poste de formateur Simplon à l'ADEP de Roubaix.
 
-Il a pour objectif de proposer aux étudiants un cadre de travail organisé tout en restant simple et abordable pour des débutants. Il les prépare ainsi à des notions abordées plus tard dans le programme et les familiarise avec des outils standards tels que le routeur. Ici par exemple un modèle basique de routeur entièrement en PHP leur est proposé pour leur usage.
+
+## Languages utilisés
+![HTML5](https://img.shields.io/badge/-HTML5-orange.svg)
+![CSS3](https://img.shields.io/badge/-CSS3-blue.svg)
+![FLEXBOX](https://img.shields.io/badge/-FLEXBOX-lightblue.svg)
+![BOOTSTRAP](https://img.shields.io/badge/-BOOTSTRAP-PURPLE.svg)
+![PHP7](https://img.shields.io/badge/-PHP7-green.svg)
