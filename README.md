@@ -15,7 +15,6 @@ Il fallait également, mettre en place un système de gestion des utilisateurs p
 
 
 ## Langages & technologies utilisés
-![SYMFONY](https://img.shields.io/badge/-SYMFONY-BLACK.svg)
 ![PHP7](https://img.shields.io/badge/-PHP7-green.svg)
 ![SQL](https://img.shields.io/badge/-SQL-yellow.svg)
 ![HTML5](https://img.shields.io/badge/-HTML5-orange.svg)
